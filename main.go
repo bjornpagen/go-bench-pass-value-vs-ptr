@@ -68,10 +68,6 @@ var _sink struct {
 	b byte
 }
 
-type payload interface {
-	payload1B | payload4B | payload16B | payload64B | payload128B | payload256B | payload1KiB | payload4KiB | payload16KiB | payload64KiB | payload256KiB | payload1MiB | payload4MiB | payload16MiB | payload64MiB | payload256MiB
-}
-
 // go: noinline
 func B1PassByPtr(p *payload1B) {
 	_sink.b = byteSum((*p).data[:])
