@@ -1,5 +1,6 @@
 ### Verdict: Just pass by pointer in go
 
+```
 Running tool: /opt/homebrew/bin/go test -benchmem -run=^$ -bench ^(Benchmark1B|Benchmark4B|Benchmark16B|Benchmark64B|Benchmark128B|Benchmark256B|Benchmark1K|Benchmark4K|Benchmark16K|Benchmark64K|Benchmark256K|Benchmark1M)$ github.com/bjornpagen/go-bench-pass-value-vs-ptr
 
 goos: darwin
@@ -106,4 +107,4 @@ ok      github.com/bjornpagen/go-bench-pass-value-vs-ptr        32.754s
 
 
 > Test run finished at 5/19/2023, 9:01:52 PM <
-
+```
